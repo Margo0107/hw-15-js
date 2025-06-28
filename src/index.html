@@ -1,69 +1,36 @@
-<head><script defer src="main.js"></script><link href="style.css" rel="stylesheet"></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'D:\Hillel\hw-15-js\src\index.html' in 'D:\Hillel\hw-15-js'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\Hillel\hw-15-js\src\index.html' in 'D:\Hillel\hw-15-js'
-      at D:\Hillel\hw-15-js\node_modules\webpack\lib\Compilation.js:2230:28
-      at D:\Hillel\hw-15-js\node_modules\webpack\lib\NormalModuleFactory.js:933:13
-      at eval (eval at create (D:\Hillel\hw-15-js\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\Hillel\hw-15-js\node_modules\webpack\lib\NormalModuleFactory.js:347:22
-      at eval (eval at create (D:\Hillel\hw-15-js\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\Hillel\hw-15-js\node_modules\webpack\lib\NormalModuleFactory.js:530:22
-      at D:\Hillel\hw-15-js\node_modules\webpack\lib\NormalModuleFactory.js:163:10
-      at D:\Hillel\hw-15-js\node_modules\webpack\lib\NormalModuleFactory.js:794:25
-      at D:\Hillel\hw-15-js\node_modules\webpack\lib\NormalModuleFactory.js:1018:8
-      at D:\Hillel\hw-15-js\node_modules\webpack\lib\NormalModuleFactory.js:1147:5
-  
-  - Compilation.js:2230 
-    [hw-15-js]/[webpack]/lib/Compilation.js:2230:28
-  
-  - NormalModuleFactory.js:933 
-    [hw-15-js]/[webpack]/lib/NormalModuleFactory.js:933:13
-  
-  
-  - NormalModuleFactory.js:347 
-    [hw-15-js]/[webpack]/lib/NormalModuleFactory.js:347:22
-  
-  
-  - NormalModuleFactory.js:530 
-    [hw-15-js]/[webpack]/lib/NormalModuleFactory.js:530:22
-  
-  - NormalModuleFactory.js:163 
-    [hw-15-js]/[webpack]/lib/NormalModuleFactory.js:163:10
-  
-  - NormalModuleFactory.js:794 
-    [hw-15-js]/[webpack]/lib/NormalModuleFactory.js:794:25
-  
-  - NormalModuleFactory.js:1018 
-    [hw-15-js]/[webpack]/lib/NormalModuleFactory.js:1018:8
-  
-  - NormalModuleFactory.js:1147 
-    [hw-15-js]/[webpack]/lib/NormalModuleFactory.js:1147:5
-  
-  - child-compiler.js:211 
-    [hw-15-js]/[html-webpack-plugin]/lib/child-compiler.js:211:18
-  
-  - Compiler.js:625 finalCallback
-    [hw-15-js]/[webpack]/lib/Compiler.js:625:5
-  
-  - Compiler.js:661 
-    [hw-15-js]/[webpack]/lib/Compiler.js:661:11
-  
-  - Compiler.js:1347 
-    [hw-15-js]/[webpack]/lib/Compiler.js:1347:17
-  
-  
-  - Hook.js:20 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [hw-15-js]/[tapable]/lib/Hook.js:20:14
-  
-  - Compiler.js:1343 
-    [hw-15-js]/[webpack]/lib/Compiler.js:1343:33
-  
-  - Compilation.js:3061 finalCallback
-    [hw-15-js]/[webpack]/lib/Compilation.js:3061:11
-  
-  - Compilation.js:3404 
-    [hw-15-js]/[webpack]/lib/Compilation.js:3404:11
-  
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ToDoList</h1>
+      <form class="form js--form">
+        <input
+          type="text"
+          name="value"
+          required
+          class="form__input js--form__input"
+        />
+        <button class="form__btn">Додати</button>
+      </form>
+      <ul class="js--todos-wrapper">
+        <li class="todo-item">
+          <input type="checkbox" />
+          <span class="todo-item__description">Text</span>
+          <button class="todo-item__delete">Видалити</button>
+        </li>
+        <li class="todo-item todo-item--checked">
+          <input type="checkbox" />
+          <span class="todo-item__description">Text</span>
+          <button class="todo-item__delete">Видалити</button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+

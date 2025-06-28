@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "dev": "webpack --mode=development"
+    "dev": "webpack --mode=development",
+    "start": "webpack server --open"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.9",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }
