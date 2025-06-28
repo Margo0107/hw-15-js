@@ -1,3 +1,5 @@
+import "./style.scss";
+
 const form = document.querySelector(".js--form");
 const input = document.querySelector(".js--form__input");
 const todoWrapper = document.querySelector(".js--todos-wrapper");
